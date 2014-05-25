@@ -1,17 +1,2 @@
-%h2
-  %div
-    - if current_user.present?
-      = link_to 'Log Out', log_out_path, method: :delete, class: 'log_in'
-    - else
-      = link_to 'Log In', log_in_path, class: 'log_in'
-
-  %div.username
-    - if current_user.present?
-      = current_user.username
-      = '(Admin)' if current_user.admin?
-      = link_to 'Embed Video', new_video_path, class: 'embed_video', if current_user.admin?
-    - else 
-      %p Your UserName
-
-%div
+%div.notnice
   Videos

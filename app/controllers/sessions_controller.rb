@@ -11,6 +11,6 @@ class SessionsController
 
   def destroy
     sign_out
-    redirect_to notnice_pat
+    redirect_to notnice_path
   end
 end

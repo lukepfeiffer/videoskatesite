@@ -1,13 +1,88 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+body{
+	margin: 0;
+	background-color: #ccc;
+	text-align: center;
+}
+
+h1{
+  font-size: 50px;
+	margin: 0;
+}
+
+.main{
+	background: url('/assets/city.jpg') repeat-x;
+	text-align: center;
+	height: 188px;
+}
+
+.log_in{
+	color: #fff;
+	float: left;
+	padding: 3px 5px;
+  font-size: 23px;
+	background-color: #25a6e1;
+	border: 1px solid #1a87b9;
+	border-radius: 4px;
+	text-decoration: none;
+}
+
+.username_div{
+	float: right;
+	font-size: 30px;
+	padding: 3px 5px;
+	/* background-color: #ccc; */
+	border: 1px solid #000;
+	border-radius: 4px;
+}
+
+.home{
+  text-align: center;
+}
+
+.enter{
+	color: #fff;
+  font-size: 24px;
+	margin: 5px;
+	padding: 0 5px;
+	border: 1px solid #000;
+	background-color: #25a6e1;
+	border-radius: 4px;
+	text-decoration: none;
+}
+
+.notnice{
+  font-size: 35px;
+	margin: 2px;
+}
+
+.log_in_div{
+  width: 650px;
+}
+
+.field{
+	font-size: 20px;
+  display: list-item;
+	border: 1px solid #8585ad;
+	border-radius: 4px;
+}
+
+.submit{
+	color: #fff;
+  float: left;
+	font-size: 23px;
+	border-radius: 4px;
+	border: 1px solid #25a6e3;
+	background-color: #25a6e6;
+}
+
+.sign_in{
+  font-size: 30px;
+}
+
+#sign_in{
+  float: right;
+}
+
+#sign_up{
+  float: left;
+}
