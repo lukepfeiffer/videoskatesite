@@ -15,8 +15,9 @@
         %div.username_div
           - if current_user.present?
             = current_user.username
-            = '(Admin)' if current_user.admin?
-            = link_to 'Embed Video', new_video_path, class: 'embed_video' if current_user.admin?
+            - if current_user.admin?
+              = '(Admin)'
+              = link_to 'Embed Video', new_video_path, class: 'embed_video'
           - else
             %p Your UserName
 

@@ -1,8 +1,12 @@
 class PagesController < ApplicationController
   def home
+    @video = Video.last
   end
 
   def notnice
+    @videos = Video.all
+    @comments = Comment.all
+    @comment = Comment.new
   end
 
   def log_out

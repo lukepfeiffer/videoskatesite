@@ -1,6 +1,7 @@
 VideoSite::Application.routes.draw do
   resources :users
   resources :videos
+  resources :comments
 
   root 'pages#home'
 
