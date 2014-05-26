@@ -3,12 +3,14 @@
     %ul.video_ul
       = raw video.url
       %div.comment_div
-        = video.user.username + ':'
+        %span#video_username
+          = video.user.username + ':'
         = video.description
         = link_to 'Delete Video?', video_path(video), method: :delete, class: 'delete' if current_user.admin?
         - @comments.each do |comment|
           %ul.comment_ul
-            = comment.user.username + ':'
+            %span#comment_username
+              = comment.user.username + ':'
             = comment.comment
             = link_to 'Delete Comment?', comment_path(comment), method: :delete, class: 'delete' if current_user.admin?
         %div

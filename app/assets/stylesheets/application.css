@@ -98,6 +98,47 @@ iframe{
   background-color: #25a6e6;
 }
 
+.delete{
+  font-size: 13px;
+  float: right;
+  color: #000;
+  background-color: #e62020;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.username_div{
+  font-size: 24px;
+  width: 240px;
+  background-color: #ccc;
+}
+
+.embed_video{
+  color: #fff;
+  padding: 1px 5px;
+  background-color: #25a6e1;
+  border: 1px solid #1a87b9;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.comment_div{
+  padding: 0 2px;
+}
+
+.comment_ul{
+  padding: 0 4px;
+}
+
+#video_username{
+  color: #0008ff;
+}
+
+#comment_username{
+  color: #3d64ff;
+}
+
 .sign_in{
   font-size: 30px;
 }
