@@ -15,3 +15,12 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   gem 'sdoc', require: false
 end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'rails_12factor'
+end
