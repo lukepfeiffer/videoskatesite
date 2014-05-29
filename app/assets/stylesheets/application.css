@@ -58,7 +58,7 @@ iframe{
 }
 
 .log_in_div{
-  width: 650px;
+  width: 550px;
 }
 
 .video_ul{
@@ -87,6 +87,15 @@ iframe{
   display: list-item;
   border: 1px solid #8585ad;
   border-radius: 4px;
+}
+
+.area{
+  border: 1px solid #8585ad;
+  font-size: 15px;
+  width: 248px;
+  height: 50px;
+  border-radius: 4px;
+  margin: 3px;
 }
 
 .submit{
@@ -136,6 +145,11 @@ iframe{
   padding: 0 4px;
 }
 
+.embed{
+  font-size: 30px;
+  width: 200px;
+}
+
 #video_username{
   color: #0008ff;
 }
@@ -150,8 +164,12 @@ iframe{
 
 #sign_in{
   float: right;
+  border: 1px solid #989b9e;
+  border-radius: 4px;
 }
 
 #sign_up{
   float: left;
+  border: 1px solid #989b9e;
+  border-radius: 4px;
 }
