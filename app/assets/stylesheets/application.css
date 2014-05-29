@@ -108,6 +108,11 @@ iframe{
   border-radius: 3px;
 }
 
+#delete_video{
+  background-color: #ff2643
+}
+
+
 .username_div{
   font-size: 24px;
   width: 240px;

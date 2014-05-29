@@ -13,8 +13,8 @@ class VideosController < ApplicationController
     end
   end
 
-  def destroy
-    Video.find_by(params:[:id]).destroy
+ def destroy
+    Video.find(params[:id]).destroy
     redirect_to notnice_path
   end
 

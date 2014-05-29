@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    Comment.find_by(params:[:id]).destroy
+    Comment.find(params[:id]).destroy
     redirect_to notnice_path
   end
 

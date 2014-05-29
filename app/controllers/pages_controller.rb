@@ -9,10 +9,6 @@ class PagesController < ApplicationController
     @comment = Comment.new
   end
 
-  def log_out
-
-  end
-
   def log_in
     @user = User.new
   end
