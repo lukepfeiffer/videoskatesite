@@ -1,28 +1,28 @@
-<!DOCTYPE html>
-%html
-  %head
-    %title
-      TownNotNice
-    %div.main
-      %h1
-        TownNotNice
-        %div
-          - if current_user.present?
-            = link_to 'Log Out', log_out_path, method: :delete, class: 'log_in'
-          - else
-            = link_to 'Log In', log_in_path, class: 'log_in'
-
-        %div.username_div
-          - if current_user.present?
-            = current_user.username
-            - if current_user.admin?
-              = '(Admin)'
-              = link_to 'Embed Video', new_video_path, class: 'embed_video'
-          - else
-            %p Your UserName
-
+!!!
+%head
   = stylesheet_link_tag    "application", media: "all"
   = javascript_include_tag "application"
   = csrf_meta_tags
+  %title
+    TownNotNice
+
+%div.main
+  %h1
+    TownNotNice
+    %div
+      - if current_user.present?
+        = link_to 'Log Out', log_out_path, method: :delete, class: 'log_in'
+      - else
+        = link_to 'Log In', log_in_path, class: 'log_in'
+
+    %div.username_div
+      - if current_user.present?
+        = current_user.username
+        - if current_user.admin?
+          = '(Admin)'
+          = link_to 'Embed Video', new_video_path, class: 'embed_video'
+      - else
+        %p Your UserName
+
 %body
-  = yield
+= yield
