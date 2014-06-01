@@ -1,7 +1,7 @@
 %div.notnice
   - @videos.reverse_each do |video|
     %ul.video_ul
-      - if @video.present?
+      - if video.present?
         = raw video.url
         %div.comment_div
           %span#video_username

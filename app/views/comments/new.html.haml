@@ -1,6 +1,7 @@
-%p Post A Comment!
+%div.post_comment
+  %p Post A Comment!
 
-%div
-  = form_for(@comment) do |f|
-    = f.text_area :comment, placeholder: 'Comment', class: 'area'
-    = f.submit 'Submit', class: 'submit'
+  %div
+    = form_for(@comment) do |f|
+      = f.text_area :comment, placeholder: 'Comment', class: 'area'
+      = f.submit 'Submit', class: 'submit'
