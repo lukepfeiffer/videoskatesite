@@ -1,0 +1,21 @@
+%div.notnice
+  - @videos.reverse_each do |video|
+    %ul.video_ul
+      - if video.present?
+        = raw video.url
+        %div.comment_div
+          %span#video_username
+            = video.user.username + ':'
+          = video.description
+          - if current_user.present?
+            = link_to 'Delete Video?', video_path(video), method: :delete, class: 'delete', id: 'delete_video' if current_user.admin?
+          - @comments.each do |comment|
+            %ul.comment_ul
+              %span#comment_username
+                = comment.user.username + ':'
+              = comment.comment
+              -if current_user.present?
+                = link_to 'Delete Comment?', comment_path(comment), method: :delete, class: 'delete' if current_user.admin?
+          %div
+            - if current_user.present?
+              = link_to 'Comment?', new_comment_path, class: 'comment'

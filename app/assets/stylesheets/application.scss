@@ -5,8 +5,8 @@ body{
 }
 
 h1{
+  margin: 0 auto 0 20px;
   font-size: 50px;
-  margin: 0;
 }
 
 iframe{
@@ -24,9 +24,9 @@ iframe{
 
 .log_in{
   color: #fff;
-  float: left;
+  margin: 50px;
   padding: 3px 5px;
-  font-size: 23px;
+  font-size: 17px;
   background-color: #25a6e1;
   border: 1px solid #1a87b9;
   border-radius: 4px;
@@ -35,9 +35,9 @@ iframe{
 
 .username_div{
   float: right;
+  margin: 10px 5px;
   font-size: 30px;
   padding: 3px 5px;
-  /* background-color: #ccc; */
   border: 1px solid #000;
   border-radius: 4px;
 }
@@ -75,11 +75,11 @@ iframe{
 }
 
 .comment{
-  text-decoration: none;
-  background-color: #589bc4;
   color: #000;
   padding: 3px;
+  text-decoration: none;
   border: 1px solid #447a9c;
+  background-color: #589bc4;
 }
 
 .field{
@@ -117,14 +117,21 @@ iframe{
   border-radius: 3px;
 }
 
+.delete:hover{
+  background-color: #ff0000;
+}
+
 #delete_video{
   background-color: #ff2643
 }
 
+#delete_video:hover{
+  background-color: #ff5757;
+}
 
 .username_div{
-  font-size: 24px;
   width: 240px;
+  font-size: 24px;
   background-color: #ccc;
 }
 
@@ -136,11 +143,13 @@ p{
 
 .embed_video{
   color: #fff;
+  margin: 15px;
+  font-size: 20px;
   padding: 1px 5px;
-  background-color: #25a6e1;
-  border: 1px solid #1a87b9;
   border-radius: 4px;
   text-decoration: none;
+  background-color: #25a6e1;
+  border: 1px solid #1a87b9;
 }
 
 .comment_div{
@@ -152,8 +161,6 @@ p{
   margin: 0;
   width: 275px;
 }
-
-
 
 .comment_ul{
   padding: 0 4px;
@@ -186,4 +193,7 @@ p{
   float: left;
   border: 1px solid #989b9e;
   border-radius: 4px;
+}
+
+#your_username{
 }

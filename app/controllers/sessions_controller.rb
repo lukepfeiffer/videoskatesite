@@ -11,6 +11,6 @@ class SessionsController < ApplicationController
 
   def destroy
     sign_out
-    redirect_to notnice_path
+    redirect_to videos_path
   end
 end

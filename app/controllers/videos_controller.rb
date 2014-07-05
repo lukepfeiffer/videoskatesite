@@ -1,4 +1,10 @@
 class VideosController < ApplicationController
+  def index
+    @videos = Video.all
+    @comments = Comment.all
+    @comment = Comment.new
+  end
+
   def new
     @video = Video.new
   end
