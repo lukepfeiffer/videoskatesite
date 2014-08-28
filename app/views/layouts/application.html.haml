@@ -7,20 +7,19 @@
     TownNotNice
 
 %div.main
-  %h1
-    - if current_user.present?
-      %div.username_div
+  %h1 TownNotNice
+  %div.username_div
+    %li
+      - if current_user.present?
         = current_user.username
         - if current_user.admin?
           = '(Admin)'
           = link_to 'Embed Video', new_video_path, class: 'embed_video'
-        - if current_user.present?
-          = link_to 'Log Out', log_out_path, method: :delete, class: 'log_in'
-        - else
-          = link_to 'Log In', log_in_path, class: 'log_in'
+        = link_to 'Log Out', log_out_path, method: :delete, class: 'log_in'
 
-    - else
-      %p.username_div#your_username Your UserName
+      - else
+        Your UserName
+        %li= link_to 'Sign Up', new_user_path
 
 %body
-= yield
+  = yield

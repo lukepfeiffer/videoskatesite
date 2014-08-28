@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.user = current_user
     if @comment.save
-      redirect_to notnice_path
+      redirect_to videos_path
     else
       redirect_to new_comment_path
     end

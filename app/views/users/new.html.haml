@@ -1,0 +1,18 @@
+%div.log_in_div
+  %li.sign_in_li
+    %span.sign_in
+      Sign Up 
+    = form_for(@user) do |f|
+      = f.text_field :email, placeholder: 'email@example.com', class: 'field'
+      = f.text_field :username, placeholder: 'Username', class: 'field'
+      = f.password_field :password, placeholder: 'Password', class: 'field'
+      = f.password_field :password_confirmation, placeholder: 'Password Confirmation', class: 'field'
+      = f.submit 'Submit', class: 'submit'
+
+  %li.sign_in_li
+    %span.sign_in
+      Sign In
+    = form_tag(sign_in_path) do
+      = text_field_tag :email, nil, placeholder: 'email@example.com', class: 'field'
+      = password_field_tag :password, nil, placeholder: 'Password', class: 'field'
+      = submit_tag 'Submit', class: 'submit'
